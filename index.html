@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300&amp;display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <div class="flex">
+        <div class="flex__column--left">LEFT</div>
+
+        <div class="flex__column--middle">
+            <div class="top-text">
+                <h1> Create an account</h1>
+            </div>
+          
+            <form class="form" name="my-Form" onsubmit="return validateForm()" method="POST" novalidate>
+                <br>
+              
+                <br>
+                <div class="input-field">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="fname" name="First Name" onfocusout="validateFirstName()">
+                    <span class="helper-text"></span>
+                </div>
+              
+                Last Name 
+                <br>
+                
+                <div class="input-field">
+                    <input type="text" id="lname" name="l-name" onfocusout="validateLastName()">
+                    <span class="helper-text"></span>
+                <br>
+                E-mail 
+            </div>
+                <div class="input-field">
+                    <input type="email" id="email" name="e-mail" onfocusout="validateEmail()">
+                    <span class="helper-text"></span>
+                <br>
+                Password 
+                <br>
+            </div>
+                <div class="input-field">
+                    <input type="password" id="password" name="password" onfocusout="validatePassword()">
+                    <span class="helper-text"></span>
+                </div>
+                <br>
+                <br>
+                <button class="btn" type="submit">Sign up</button>
+            </form>
+        </div>
+
+        <div class="flex__column--right">RIGHT</div>
+
+        </div>
+        <script src="../js/script.js"></script>
+        <script src="js/validator.js"></script>
+
+     
+       
+        
+    </body>
+</html>

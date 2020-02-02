@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: rgba($color-orange, 0.4);
+}
+
+body {
+
+    font-family: $font-main;
+}
+
+.top-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+
+    @include respond(phone) {  
+        align-items: center;
+        max-height: 50%;
+        background-size: contain;
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,95 @@
+.flex {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-content: space-evenly; 
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    
+    
+
+
+    @include respond(phone) {
+        flex-direction: column;
+        line-height: 1.2;
+        margin: 5%;
+        max-width: 90%;
+        display: block;
+    }
+        @include respond(tab-port) {
+		max-width: 1400px;
+        margin: auto;
+  
+        }
+        @include respond(tab-land) {
+            max-width: 1200px;
+            padding: auto;
+    
+            }
+
+
+
+//left column
+&__column--left {
+
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    flex: 20%;
+    background-color: #183446;
+
+    @include respond(phone) {  
+        align-items: center;
+        max-height: 6rem;
+        background-size: contain;
+    }
+
+}
+
+//right column
+&__column--right {
+    background-color: #183446;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    flex: 20%;
+    @include respond(phone) {  
+        align-items: center;
+        max-height: 6rem;
+        background-size: contain;
+    }
+}
+
+//middle column - FORM
+&__column--middle{
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    flex: 30%;
+    justify-content: center;
+    align-items: center;
+    background-color: #C0C5C1;
+    flex: 40%;
+
+    @include respond(phone) {  
+        align-items: center;
+        max-height: 50%;
+        background-size: contain;
+    }
+
+   
+}
+
+}
+.flex > div {
+    margin: 0;
+    padding: 2%;
+    height: 100vh;
+
+
+}
+

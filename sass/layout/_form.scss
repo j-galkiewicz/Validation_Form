@@ -1,0 +1,30 @@
+.form {
+   width: 97%;
+   padding: 10% 17%;
+   margin: 15% 1%;
+   font-size: 1.3rem;
+   border: solid $color-orange;
+   display: inline-block;
+   align-content: center;
+
+   @include respond(phone) {
+      display: inline;
+      border: hidden;
+      overflow: hidden;
+      align-items: center;
+  }
+
+}
+
+
+
+#fname,
+#lname,
+#email,
+#password {
+   border: none;
+   width: 100%;
+   height: 28px;
+   cursor: pointer;
+
+}
